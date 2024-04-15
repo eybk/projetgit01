@@ -1,0 +1,169 @@
+/* resetting browser stuff */
+*     {
+  box-sizing: border-box;
+}
+html,
+body   {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* styling our overall page */
+body     {
+  background: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styling our header */
+header   {
+  background: #000000;
+  color: #FFF;
+  padding: 20px 30px;
+}
+
+/* logo */
+#logo         {
+  display: inline-block;
+  color: #f5f5f5;
+  text-decoration: none;
+  width: 49%;
+}
+#logo img    {
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#logo span   {
+  display: inline-block;
+}
+
+/* main navigation */
+nav     {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+nav ul   {
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a    {
+  color: #f9f9f9;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+}
+nav ul li a:hover   {
+  background: #444;
+}
+
+/* styling our footer */
+footer   {
+  background: #222;
+  color: #777;
+  padding: 40px;
+  text-align: center;
+}
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+/* Style des éléments de la galerie */
+div.gallery {
+  border: 1px solid #ccc; /* Bordure grise */
+}
+
+/* Style au survol des éléments de la galerie */
+div.gallery:hover {
+  border: 1px solid #777; /* Bordure plus sombre */
+}
+
+/* Style des images à l'intérieur de la galerie */
+div.gallery img {
+  width: 100%; /* Largeur occupant 100% du conteneur parent */
+  height: auto; /* Hauteur ajustée automatiquement pour maintenir les proportions */
+}
+
+/* Style des descriptions dans la galerie */
+div.desc {
+  padding: 15px; /* Espacement intérieur de 15 pixels */
+  text-align: center; /* Centrage du texte */
+}
+
+/* Boîte modèle "border-box" pour tous les éléments */
+* {
+  box-sizing: border-box;
+}
+
+/* Style des éléments responsifs (utilisés pour la disposition des images) */
+.responsive {
+  padding: 0 6px; /* Espacement interne de 6 pixels */
+  float: left; /* Flottement à gauche */
+  width: 24.99999%; /* Largeur initiale de 24.99999% du conteneur parent */
+}
+
+/* Media Query pour les écrans de largeur maximale de 700 pixels */
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%; /* Largeur de 49.99999% sur des écrans plus petits */
+    margin: 6px 0; /* Marge de 6 pixels en haut et en bas */
+  }
+}
+
+/* Media Query pour les écrans de largeur maximale de 500 pixels */
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%; /* Largeur de 100% sur des écrans encore plus petits */
+  }
+}
+
+/* Clearfix pour éviter les problèmes de disposition liés aux éléments flottants */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Ajouter un style pour l'encadrement */
+.encadre {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid #a5f200; /* Ajouter une bordure de 2 pixels solide avec une couleur */
+  padding: 20px; /* Ajouter un espacement intérieur de 20 pixels */
+  border-radius: 10px; /* Ajouter une bordure arrondie */
+  width: 50%; /* Définir une largeur, ajustez selon vos besoins */
+  margin: 20px auto; /* Centrer le conteneur en utilisant une marge */
+}
+
+.button {
+ color: #ecf0f1;
+ font-size: 17px;
+ background-color: #e67e22;
+ border: 1px solid #f39c12;
+ border-radius: 5px;
+ padding: 10px;
+ box-shadow: 0px 6px 0px #d35400;
+ transition: all .1s;
+  align-self: center; /* Aligner le bouton au centre */
+  margin-top: 10px; /* Ajouter une marge en haut pour l'espacement */
+}
+
+.button:active {
+ box-shadow: 0px 2px 0px #d35400;
+ position: relative;
+ top: 2px;
+}
